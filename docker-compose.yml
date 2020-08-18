@@ -1,0 +1,10 @@
+version: '1'
+services:
+  raspbian-opencv-example:
+    build: .
+    image: isantan3/raspbian-opencv:v1
+    container_name: raspbian-opencv-example 
+    command: python3 -u simples.py
+    volumes:
+      - ./home/pi
+    
